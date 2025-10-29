@@ -13,14 +13,11 @@ It allows **users** to register, log in, apply for jobs, and view their applicat
 - 🔎 **Job Listings** with filters & search  
 - 📄 **Job Applications** (Users can apply, recruiters can track)  
 - ⚡ **Form Validation & Error Handling**  
-- 📱 **Responsive UI** (mobile & desktop)  
 - 🔄 **Pagination** for large job listings  
 
 ---
 
 ## 🛠 Tech Stack
-
-**Frontend:** React, Tailwind CSS (or HTML/CSS)  
 **Backend:** Node.js, Express.js  
 **Database:** MongoDB (Mongoose ODM)  
 **Auth:** JWT (JSON Web Token), bcrypt.js  

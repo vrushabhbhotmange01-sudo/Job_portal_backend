@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import User from "../modules/User.js";
+import User from "../modules/user.js";
 
 // protect middleware with built-in role check
 export const protect = async (req, res, next) => {

@@ -36,3 +36,13 @@ export const protect = async (req, res, next) => {
     return res.status(401).json({ message: "No token, authorization denied" });
   }
 };
+
+
+export const authorize = (...allowedRoles) => {
+  return (req, res, next) => {
+    if (!allowedRoles.includes(req.user.role)) {
+      return res.status(403).json({ message: "Forbidden: You do not have access to this resource" });
+    }
+    next();
+  };
+};
